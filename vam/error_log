@@ -1,0 +1,16 @@
+[03-Feb-2018 21:51:00 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/aviancav/public_html/vam/languagesdd.php on line 13
+[03-Feb-2018 21:51:00 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/aviancav/public_html/vam/languagesdd.php on line 14
+[03-Feb-2018 21:53:37 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/aviancav/public_html/vam/languagesdd.php on line 13
+[03-Feb-2018 21:53:37 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/aviancav/public_html/vam/languagesdd.php on line 14
+[03-Feb-2018 22:00:57 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/aviancav/public_html/vam/languagesdd.php on line 13
+[03-Feb-2018 22:00:57 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/aviancav/public_html/vam/languagesdd.php on line 14
+[03-Feb-2018 22:05:41 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/aviancav/public_html/vam/languagesdd.php on line 13
+[03-Feb-2018 22:05:41 UTC] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/aviancav/public_html/vam/languagesdd.php on line 14
+[03-Feb-2018 23:22:00 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/aviancav/public_html/vam/main_vam.php on line 14
+[03-Feb-2018 23:22:00 UTC] PHP Warning:  file_get_contents(http://wx.ivao.aero/taf.php): failed to open stream: no suitable wrapper could be found in /home/aviancav/public_html/vam/main_vam.php on line 14
+[03-Feb-2018 23:22:00 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/aviancav/public_html/vam/main_vam.php on line 29
+[03-Feb-2018 23:22:00 UTC] PHP Warning:  file_get_contents(http://wx.ivao.aero/metar.php): failed to open stream: no suitable wrapper could be found in /home/aviancav/public_html/vam/main_vam.php on line 29
+[03-Feb-2018 23:22:05 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/aviancav/public_html/vam/main_vam.php on line 14
+[03-Feb-2018 23:22:05 UTC] PHP Warning:  file_get_contents(http://wx.ivao.aero/taf.php): failed to open stream: no suitable wrapper could be found in /home/aviancav/public_html/vam/main_vam.php on line 14
+[03-Feb-2018 23:22:05 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/aviancav/public_html/vam/main_vam.php on line 29
+[03-Feb-2018 23:22:05 UTC] PHP Warning:  file_get_contents(http://wx.ivao.aero/metar.php): failed to open stream: no suitable wrapper could be found in /home/aviancav/public_html/vam/main_vam.php on line 29

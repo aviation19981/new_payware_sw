@@ -1,0 +1,15 @@
+[06-Jan-2016 18:42:49 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character' in /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php:69
+Stack trace:
+#0 /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php(69): DateTime->__construct('@')
+#1 {main}
+  thrown in /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php on line 69
+[06-Jan-2016 18:43:02 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character' in /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php:69
+Stack trace:
+#0 /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php(69): DateTime->__construct('@')
+#1 {main}
+  thrown in /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php on line 69
+[06-Jan-2016 18:43:39 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (@) at position 0 (@): Unexpected character' in /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php:69
+Stack trace:
+#0 /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php(69): DateTime->__construct('@')
+#1 {main}
+  thrown in /home/admincolstar250/public_html/system/vam/core/templates/SimBrief/SimBrief.php on line 69
