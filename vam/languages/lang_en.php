@@ -80,6 +80,28 @@ define ('AVIANCA_HELLO_INFO', 'What are you waiting to fly with Avianca?');
 define ('AVIANCA_INFO_INTRANET', 'Avianca Virtual Information');
 define ('AVIANCA_INFO_INTRANET_DETAIL', 'Cordial hello pilot, we hope this information is very helpful.');
 
+/////////////////////////////// Avianca ADMISIONES
+define ('AVIANCA_ADMISSIONS_TITLE', 'Admission Process');
+define ('AVIANCA_ADMISSIONS_TITLE_INFO', 'We are happy that you are interested in being part of us!');
+define ('AVIANCA_ADMISSIONS_TITLE_FIRST', 'To be part of the crew, it is necessary that the applicant pass the theoretical exam with a minimum difference of 80%, will have');
+define ('AVIANCA_ADMISSIONS_TITLE_TWO', 'minutes to respond');
+define ('AVIANCA_ADMISSIONS_TITLE_THREE', 'questions; additional must complete the following requirements:');
+define ('AVIANCA_ADMISSIONS_ONE', 'Be 17 years old at the time of making the request');
+define ('AVIANCA_ADMISSIONS_TWO', 'Speak, read and write in English or Spanish.');
+define ('AVIANCA_ADMISSIONS_THREE', 'Have an active IVAO account.');
+define ('AVIANCA_ADMISSIONS_FOUR', 'Have the FS3 rank and add 100 hours in your respective IVAO profile.');
+define ('AVIANCA_ADMISSIONS_FIVE', 'Have at least 2 biweekly hours to carry out your flights flights.');
+define ('AVIANCA_ADMISSIONS_SIX', 'The pilot race with us, is shaped as follows');
+define ('AVIANCA_ADMISSIONS_CLOSED', 'The test process is closed');
+define ('AVIANCA_ADMISSIONS_OPENED', 'Registration process before the test');
+define ('AVIANCA_ADMISSIONS_OPENED_INFO', 'All information is validated, but is true, deleted');
+define ('AVIANCA_ADMISSIONS_TITLE_NAME', 'Names');
+define ('AVIANCA_ADMISSIONS_TITLE_SURNAME', 'Surnames');
+define ('AVIANCA_ADMISSIONS_TITLE_RANK', 'Your pilot rank in IVAO');
+define ('AVIANCA_ADMISSIONS_TITLE_TERMS', 'I accept the terms and conditions of Avianca Virtual and its data processing policy.');
+define ('AVIANCA_START_TEST', 'Start Exam');
+define ('AVIANCA_CLEAN_TEST', 'Clear Fields');
+
 	// NavBar options
 	define ('ABOUT' , 'About ');
 	define ('PILOTS' , 'Pilot Roster');

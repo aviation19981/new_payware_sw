@@ -22,7 +22,7 @@
   </ul>
   <div class="tab-content">
     <div id="main" class="tab-pane fade in active">
-      <p><?php include('pilot_profile_details_stats.php'); include( 'pilot_profile_flights.php');?></p>
+      <p><?php include('pilot_profile_details_stats.php'); echo '<br><hr><br>'; include( 'pilot_profile_flights.php');?></p>
     </div>
     <div id="stats" class="tab-pane fade">
         <p><?php $pilotid=$pilotID;include('pilot_profile_stats.php'); ?></p>

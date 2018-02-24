@@ -30,7 +30,7 @@ ul,li {list-style:none;}
 .card-wrapper {display:table; width:100%; height:100%; }
 .card-container {display:table-cell; vertical-align:middle; text-align:center;}
 .card-inner {overflow:hidden; position:relative; width:280px; margin:0 auto; background:#fff; border-radius:8px;}
-.card-group {position:relative; min-height:434px;}
+.card-group {position:relative; min-height 700px;}
 .card-group .card-front {position:absolute; width:100%; height:auto;}
 .card-group .card-front .card-cover {width:100%; height:120px; background:url('./images/portada/<?php echo rand(0,5) ; ?>.jpg') no-repeat 50% 50%; background-size:cover;}
 .card-group .card-front .card-covertres {width:100%; height:120px; background:url('./images/portada/<?php echo rand(0,5) ; ?>.jpg') no-repeat 50% 50%; background-size:cover;}
@@ -65,35 +65,141 @@ ul,li {list-style:none;}
 	<div class="col-md-12">
 	
 	
-	<div class="card-wrapper" style="width:100%;">
-	<div class="card-container"  style="width:100%;">
-		<div class="card-inner"  style="width:100%;">			
-			<div class="card-group"  style="width:100%;">				
-				<div class="card-front"  style="width:100%;">
-					<div class="card-covertres"  style="width:100%;height:200px;"></div>
-					<div class="my-profile"  style="width:100%;">
+	<div class="card-wrapper" style="width:100%;height:1200px" >
+	<div class="card-container" style="width:100%;height:1200px">
+		<div class="card-inner"  style="width:100%;height:1200px">			
+			<div class="card-group" style="width:100%;height:1200px">			
+				<div class="card-front"  style="width:100%;height:1200px">	
+					<div class="card-covertres" style="width:100%;height:300px">	</div>
+					<div class="my-profile" style="width:100%">	
 						<span class="thumb"><img src="./images/logito.png" alt="" /></span>
 					</div>
 					<div class="info">
-						<p class="name"><?php echo PILOT_CERTIFICATIONS; ?></p>
+						<p class="name"><?php echo PILOT_ACTIONS; ?></p>
 					</div>
-					  <table class="altern">
-					<?php
-						$x_value = '';
-						if (sizeof($planes_certificated) > 0) {
-							foreach ($planes_certificated as $x => $x_value) {
-								?>
-								<tr>
-									<td><i class="fa fa-plane">&nbsp;&nbsp;</i> <b>License</b> :: <?php echo $x_value; ?></td>
-								</tr>
-							<?php
-							}
-						}
-					?>
-				</table>
-					
-					
+
+
+
+
+
+<article>
+
+<div class="container" style="width:90%">
+
+         <div class="row">
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=mails"><img src="images/Email.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_MAIL; ?></strong></p>
 					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=route_selection_stage1"><img src="images/Map-icon.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_ROUTE_RESERVE; ?></strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="#" data-toggle="modal" data-target="#JumpModal"><img src="images/Travel-Airplane-icon.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_CHANGE_LOCATION; ?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=my_bank"><img src="images/money-icon.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_BANK; ?></strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=pirep_manual_create"><img src="images/validate.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_MANUAL_PIREP; ?></strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=my_profile"><img
+							src="images/Occupations-Pilot-Male-Light-icon.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_PROFILE; ?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=pilot_profile_stats&pilotid=<?php echo $id;?>"><img src="images/estadisticas.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_STATS; ?></strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=vaparameters_info"><img src="images/fmc.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_VA_PARAMETER; ?></strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=download"><img src="images/download.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_DOWNLOADS; ?></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-4">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=tours_pilot"><img src="images/tour.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong><?php echo OPTION_TOUR; ?></strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-8">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=jeppesen"><img src="images/Jeppesen.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong>Charts Jeppesen</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-sm-12">
+				<div class="thumbnail">
+					<a href="./index_vam_op.php?page=acars_download"><img src="./images/avianca/2.png" width="20%"></a>
+					<div class="caption">
+						<p class="text-center"><strong>Avianca ACARS</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>	
+		
+	</article>	
+		
+		
+		</div>
 				<!-- //front -->
 			</div>
 			<!-- //card-group -->			
@@ -108,6 +214,3 @@ ul,li {list-style:none;}
 
 	</div>
 </div>
-					
-					
-		

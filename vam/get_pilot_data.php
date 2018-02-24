@@ -154,7 +154,7 @@
 		$num_fsacars_reg = $row["flights"];
 	}
 	//  Get plane certifications
-	$sql = "select plane_icao from fleettypes_gvausers fgva, fleettypes ft where ft.fleettype_id=fgva.fleettype_id and fgva.gvauser_id=$id order by plane_icao asc";
+	$sql = "select plane_icao, plane_description from fleettypes_gvausers fgva, fleettypes ft where ft.fleettype_id=fgva.fleettype_id and fgva.gvauser_id=$id order by plane_icao asc";
 	if (!$result = $db->query($sql)) {
 		die('There was an error running the query [' . $db->error . ']');
 	}
@@ -163,7 +163,7 @@
 	$i = 0;
 	while ($row = $result->fetch_assoc()) {
 		$planes .= $row["plane_icao"] . '</br>';
-		$planes_certificated[$i] = $row["plane_icao"];
+		$planes_certificated[$i] = $row["plane_description"];
 		$i++;
 	}
 	// Get hub

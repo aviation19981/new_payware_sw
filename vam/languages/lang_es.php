@@ -78,6 +78,29 @@
 	define ('AVIANCA_INFO_INTRANET_DETAIL' , 'Cordial saludo piloto, esperamos que esta información sea de gran ayuda.');
 	
 	
+	/////////////////////////////// Avianca ADMISIONES
+	define ('AVIANCA_ADMISSIONS_TITLE' , 'Proceso Admisión');
+	define ('AVIANCA_ADMISSIONS_TITLE_INFO' , 'Estamos felices de que estes interesado en ser parte de nosotros!');
+	define ('AVIANCA_ADMISSIONS_TITLE_FIRST' , 'Para ser parte de la tripulación, es necesario que el aspirante supere el examen teórico con una nota mínima del 80%, contará con');
+	define ('AVIANCA_ADMISSIONS_TITLE_TWO' , 'minutos para responder');
+	define ('AVIANCA_ADMISSIONS_TITLE_THREE' , 'preguntas; adicional debe completar los siguientes requisitos:');
+	define ('AVIANCA_ADMISSIONS_ONE' , 'Tener 17 años cumplidos al momento de realizar la solicitud.');
+	define ('AVIANCA_ADMISSIONS_TWO' , 'Hablar, leer y escribir en inglés o español.');
+	define ('AVIANCA_ADMISSIONS_THREE' , 'Tener una cuenta activa en IVAO.');
+	define ('AVIANCA_ADMISSIONS_FOUR' , 'Contar con el rango FS3 y sumar 100 horas en su respectivo perfil de IVAO.');
+	define ('AVIANCA_ADMISSIONS_FIVE' , 'Disponer de mínimo 2 horas quincenales para realizar sus respectivos vuelos.');
+	define ('AVIANCA_ADMISSIONS_SIX' , 'La carrera de piloto con nosotros, esta conformado de la siguiente manera');
+	define ('AVIANCA_ADMISSIONS_CLOSED' , 'Proceso de convocatoria está cerrado');
+	define ('AVIANCA_ADMISSIONS_OPENED' , 'Proceso de registro antes de proceder a la prueba');
+	define ('AVIANCA_ADMISSIONS_OPENED_INFO' , 'Toda la información será validada, sino es verídica, será eliminado.');
+	define ('AVIANCA_ADMISSIONS_TITLE_NAME' , 'Nombres');
+	define ('AVIANCA_ADMISSIONS_TITLE_SURNAME' , 'Apellidos');
+	define ('AVIANCA_ADMISSIONS_TITLE_RANK' , 'Su rango de piloto en IVAO');
+	define ('AVIANCA_ADMISSIONS_TITLE_TERMS' , 'Yo acepto los términos y condiciones de Avianca Virtual y su política de tratamiento de datos.');
+	define ('AVIANCA_START_TEST' , 'Iniciar Examen');
+	define ('AVIANCA_CLEAN_TEST' , 'Limpiar Campos');
+	
+	
 	// NavBar options
 	define ('ABOUT' , 'Sobre ');
 	define ('PILOTS' , 'Pilotos');

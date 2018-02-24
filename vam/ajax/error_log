@@ -1,0 +1,1 @@
+[17-Feb-2018 21:53:41 UTC] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/aviancav/public_html/vam/classes/PHPMailer-master/PHPMailerAutoload.php on line 44

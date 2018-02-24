@@ -1,8 +1,6 @@
 <?php 
 
 	require_once ('./helpers/conversions.php');
-	
-
 $host= $_SERVER["HTTP_HOST"];
 $url= $_SERVER["REQUEST_URI"];
 $web= "http://" . $host . $url;
@@ -144,7 +142,7 @@ $fullweb = $es;
 						<li><a href="./live_flight_map.php"><?php echo AVIANCA_ONLINE; ?></a></li>
 			<?php } ?>
 						<?php if($user_logged==0) { ?>
-						<li><a href="./?page=pilot_register" class="button color6"><?php echo AVIANCA_JOIN; ?></a></li>
+						<li><a href="./?page=admisiones" class="button color6"><?php echo AVIANCA_JOIN; ?></a></li>
 						<li><a href="./?page=login_form" class="button"><?php echo AVIANCA_LOGIN; ?></a></li>
 						<?php } else { ?>
 						<li><a href="./index_vam.php" class="button"><?php echo AVIANCA_SYSTEM; ?></a></li>

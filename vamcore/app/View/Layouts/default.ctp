@@ -48,6 +48,7 @@ $cakeDescription = __d('cake_dev', 'Avianca Virtual');
   if (isset($_SESSION["usertype"]))
   {
     $admin_access= $_SESSION["access_administration_panel"] == 1 ;
+	$access_pilot_manager = $_SESSION["access_pilot_manager"];
   }
   if ($id=='' || $admin_access!=1) {
     echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"0;URL=./../\">";
@@ -74,9 +75,9 @@ $cakeDescription = __d('cake_dev', 'Avianca Virtual');
   <!-- VAM 2.1 Icons menu Begin-->
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title"><?php echo 'VAM Administration Panel [version 2.6]';?></h3>
+      <h3 class="panel-title"><?php echo 'Avianca Panel Administración [version 2.6]';?></h3>
       <br>
-      <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#admin">Show / Hide modules</button>
+      <button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#admin">Mostrar / Ocultar Modulos</button>
     </div>
     <div id="admin" class="collapse in">
       <div class="row">
@@ -348,7 +349,7 @@ $cakeDescription = __d('cake_dev', 'Avianca Virtual');
           </div>
         </div>
       </div>
-<! ROW 4 END -->
+<!-- ROW 4 END -->
 <!-- row 5 -->
 <div class="row">
         <div class="col-sm-2 col-md-2">
@@ -384,6 +385,32 @@ $cakeDescription = __d('cake_dev', 'Avianca Virtual');
             </div>
           </div>
         </div>
+		<div class="col-sm-2 col-md-2">
+          <div class="thumbnail">
+            <div class="caption">
+              <?php echo $this->Html->link($this->Html->image('pilot.png',array('alt'=>'Report Pilot Activity', 'height'=>'50','width'=>'50')),'../../vam/index_vam_op.php?page=report_pilot_activity', array('target'=>'_blank','escape'=>false)); ?>
+              <p class="text-center"><strong><?php echo RPT_PILOT_ACTIVITY;?></strong></p>
+            </div>
+          </div>
+        </div>
+		<div class="col-sm-2 col-md-2">
+          <div class="thumbnail">
+            <div class="caption">
+              <?php echo $this->Html->link($this->Html->image('aircraft.png',array('alt'=>'Report Plane Out', 'height'=>'50','width'=>'50')),'../../vam/index_vam_op.php?page=report_plane_out_route', array('target'=>'_blank','escape'=>false)); ?>
+              <p class="text-center"><strong><?php echo RPT_PLANE_OUT;?></strong></p>
+            </div>
+          </div>
+        </div>
+		<?php if($access_pilot_manager==1) { ?>
+		<div class="col-sm-2 col-md-2">
+          <div class="thumbnail">
+            <div class="caption">
+              <?php echo $this->Html->link($this->Html->image('pilot.png',array('alt'=>'Report Plane Out', 'height'=>'50','width'=>'50')),'../../vam/index_vam_op.php?page=examen_admision', array('target'=>'_blank','escape'=>false)); ?>
+              <p class="text-center"><strong>Test Admon</strong></p>
+            </div>
+          </div>
+        </div>
+		<?php } ?>
         <div class="col-sm-2 col-md-2">
           <div class="thumbnail">
             <div class="caption">
@@ -418,7 +445,7 @@ $cakeDescription = __d('cake_dev', 'Avianca Virtual');
           </div>
         </div>
       </div>
-<! ROW 5 END -->
+<!--ROW 5 END -->
     </div>
   </div>
   <!-- VAM 2.1 Icons menu End-->

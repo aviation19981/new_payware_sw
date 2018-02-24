@@ -1,14 +1,4 @@
-<?php
-	/**
-	 * @Project: Virtual Airlines Manager (VAM)
-	 * @Author: Alejandro Garcia
-	 * @Web http://virtualairlinesmanager.net
-	 * Copyright (c) 2013 - 2016 Alejandro Garcia
-	 * VAM is licensed under the following license:
-	 *   Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-	 *   View license.txt in the root, or visit http://creativecommons.org/licenses/by-nc-sa/4.0/
-	 */
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,13 +49,13 @@
 		}
 	}
 ?>
-<div class="container">
-	<div class="row">
-		<div id="map-outer" class="col-md-11">
-			<div id="map-container" class="col-md-12"></div>
+
+
+<div id="map-outer" >
+			<div id="map-container" ></div>
+			<div id="over_map"></div>
 		</div><!-- /map-outer -->
-	</div> <!-- /row -->
-</div><!-- /container -->
+
 <style>
 	body { background-color:#FFFFF }
 	#map-outer {
@@ -73,19 +63,45 @@
 		border: 0px solid #CCC;
 		margin-bottom: 0px;
 		background-color:#FFFFF }
-	#map-container { height: 500px }
-	@media all and (max-width: 991px) {
-		#map-outer  { height: 650px }
+	#map-container { height: 660px }
+	@media all and (max-width: 100%) {
+		#map-outer  { height: 100% }
 	}
+	
+	.panel-map > .panel-heading {
+   
+		border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border: 0px solid #000000;
+}
+
+.table-map > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 0px;
+    line-height: 1.42857;
+    vertical-align: top;
+	border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border: 0px solid #000000;
+}
+
+
+
 </style>
+<style>
+   #wrapper { position: relative; }
+   #over_map { position: absolute; top: 0px; left: 0px; z-index: 2;width: 30%}
+</style>
+
 </body>
 <script type="text/javascript">
 	function init_map() {
 		var locations = <?php echo json_encode($flights_coordinates); ?>;
-		var var_location = new google.maps.LatLng(<?php echo $flights_coordinates[0][0]; ?>,<?php echo $flights_coordinates[0][1]; ?>);
+		var var_location = new google.maps.LatLng(4.0000000, -72.0000000);
 		var var_mapoptions = {
 			center: var_location,
-			zoom: 5,
+			zoom: 2,
 			styles: [{featureType:"road",elementType:"geometry",stylers:[{lightness:100},{visibility:"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#C6E2FF",}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#C5E3BF"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#D1D1B8"}]}]
 		};
 		var var_map = new google.maps.Map(document.getElementById("map-container"),
